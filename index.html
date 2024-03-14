@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodluyoruz - Front-End 101</title>
+
+    <!-- css linkini ekledik bootstrapten -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- js linkini ekledik bootstrapten -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</head>
+
+
+<!-- BODY START -->
+<body>
+    <!-- js bundle linkini ekledik bootstrapten -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+
+    <!-- bu alert div'in icine js ile alert div'i once statik sonra dinamik olacak sekilde ekleyecegiz. -->
+    <div id="alert"></div>
+
+    <h1 id="greeting">Kodluyoruz.org</h1>
+
+    <!-- DIV-CONTAINER START -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- DIV-INPUT&BUTTON START -->
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm">
+                    <!-- input-kullanici adi -->
+                    <div class="mb-3">
+                        <label class="form-label" for="userName">Kullanici adi</label>
+                        <input class="form-control" type="text" name="userName" id="userName">
+                    </div>
+                    <!-- input - not bilgisi -->
+                    <div class="mb-3"> 
+                        <label class="form-label" for="score">Not bilgisi</label>
+                        <input class="form-control" type="number" name="score" id="score">
+                    </div>
+                    <!-- reset butonu -->
+                    <div class="mb-3">
+                        <button type="reset" class="btn btn-danger">Resetle.</button>
+                    </div>
+                    <!-- gonder butonu -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success">Gonder.</button>
+                    </div>
+                </form>
+            </div>
+            <!-- DIV-INPUT&BUTTON END -->
+
+            <!-- DIV-LIST START -->
+            <div class="col-sm-8 offset-sm-2 mt-4">
+                <!-- bootstrapte components icinden list grouptan bir liste yapisi hazir alabilirsin-burada "with badges" diye tanimli sablonu aldik -->
+                <ul id="userList" class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Sonuc:
+                      <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- DIV-LIST END -->
+        </div>
+    </div>
+    <!-- DIV-CONTAINER START -->
+    
+
+
+
+<!-- *NOT: -->
+<!-- form yapisinda methog olarak get/post secebiliriz.  post daha guvenli bir yontem, simdilik get kullanacagiz. -->
+<!-- GET, verileri URL uzerinden gonderir; POST ise verileri arkapland gonderir (verileri kullaniciya gorunmez.). -->
+<!-- fonksiyona (event) tanimlayip icine de event.preventDefault() ozelligi girersek SUBMIT ANINDA SAYFANIN YENILENMESINE ENGEL OLUYORUZ, ayrica methodun get/post olmasinin bir onemi kalmiyor. -->
+
+<!-- js dosyasinin konumunu ekledik -->
+<script src="bolum-sonu-egzersizi.js"></script>
+    
+
+
+</body>
+<!-- BODY END -->
+</html>
